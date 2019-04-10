@@ -80,6 +80,7 @@ about the user and about the access token granted.
 ## Styling the buttons
 
 Even if it is a component you can think about it as a button, you can add classes, inline styles, etc...
+See this codepen: https://codepen.io/timlayton/pen/gppWqz
 
 
 ## Auth api
@@ -113,3 +114,7 @@ This way we avoid having to worry about if the script has loaded yet or not.
     })
 ```
 [Full auth api methods](https://developers.google.com/identity/sign-in/web/reference#authentication)
+
+## Debug 
+
+If your `onSuccess` handler throws an error, `onFailure` will be called. Put debug messages at the top of your success handler to make sure sign in works on the google's side.
